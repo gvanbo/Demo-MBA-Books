@@ -37,11 +37,11 @@ namespace Demo_MBA_Books
             this.Shipping = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProductTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.InvoiceTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.invoiceDetailsDGridc = new System.Windows.Forms.DataGridView();
+            this.invoiceDetailsDGrid = new System.Windows.Forms.DataGridView();
             this.invoicesLbl = new System.Windows.Forms.Label();
             this.invoiceDetailsLbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.invoicesDGrid)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.invoiceDetailsDGridc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.invoiceDetailsDGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // invoicesDGrid
@@ -110,14 +110,14 @@ namespace Demo_MBA_Books
             this.InvoiceTotal.HeaderText = "Inv Total";
             this.InvoiceTotal.Name = "InvoiceTotal";
             // 
-            // invoiceDetailsDGridc
+            // invoiceDetailsDGrid
             // 
-            this.invoiceDetailsDGridc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.invoiceDetailsDGridc.Location = new System.Drawing.Point(39, 350);
-            this.invoiceDetailsDGridc.Name = "invoiceDetailsDGridc";
-            this.invoiceDetailsDGridc.RowTemplate.Height = 25;
-            this.invoiceDetailsDGridc.Size = new System.Drawing.Size(711, 150);
-            this.invoiceDetailsDGridc.TabIndex = 1;
+            this.invoiceDetailsDGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.invoiceDetailsDGrid.Location = new System.Drawing.Point(39, 350);
+            this.invoiceDetailsDGrid.Name = "invoiceDetailsDGrid";
+            this.invoiceDetailsDGrid.RowTemplate.Height = 25;
+            this.invoiceDetailsDGrid.Size = new System.Drawing.Size(711, 150);
+            this.invoiceDetailsDGrid.TabIndex = 1;
             // 
             // invoicesLbl
             // 
@@ -144,12 +144,13 @@ namespace Demo_MBA_Books
             this.ClientSize = new System.Drawing.Size(800, 512);
             this.Controls.Add(this.invoiceDetailsLbl);
             this.Controls.Add(this.invoicesLbl);
-            this.Controls.Add(this.invoiceDetailsDGridc);
+            this.Controls.Add(this.invoiceDetailsDGrid);
             this.Controls.Add(this.invoicesDGrid);
             this.Name = "InvoicesExplicit";
             this.Text = "InvoicesExplicit";
+            this.Load += new System.EventHandler(this.InvoicesExplicit_Load);
             ((System.ComponentModel.ISupportInitialize)(this.invoicesDGrid)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.invoiceDetailsDGridc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.invoiceDetailsDGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -165,7 +166,7 @@ namespace Demo_MBA_Books
         private System.Windows.Forms.DataGridViewTextBoxColumn Shipping;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductTotal;
         private System.Windows.Forms.DataGridViewTextBoxColumn InvoiceTotal;
-        private System.Windows.Forms.DataGridView invoiceDetailsDGridc;
+        private System.Windows.Forms.DataGridView invoiceDetailsDGrid;
         private System.Windows.Forms.Label invoicesLbl;
         private System.Windows.Forms.Label invoiceDetailsLbl;
     }
