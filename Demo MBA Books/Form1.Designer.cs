@@ -48,6 +48,8 @@ namespace Demo_MBA_Books
             this.addBtn = new System.Windows.Forms.Button();
             this.stateComboBox = new System.Windows.Forms.ComboBox();
             this.customerIdCBox = new System.Windows.Forms.ComboBox();
+            this.invoicesBtn = new System.Windows.Forms.Button();
+            this.productsBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblCustID
@@ -217,11 +219,33 @@ namespace Demo_MBA_Books
             this.customerIdCBox.TabIndex = 18;
             this.customerIdCBox.SelectedIndexChanged += new System.EventHandler(this.customerIdCBox_SelectedIndexChanged);
             // 
+            // invoicesBtn
+            // 
+            this.invoicesBtn.Location = new System.Drawing.Point(416, 386);
+            this.invoicesBtn.Name = "invoicesBtn";
+            this.invoicesBtn.Size = new System.Drawing.Size(81, 38);
+            this.invoicesBtn.TabIndex = 19;
+            this.invoicesBtn.Text = "&Invoices";
+            this.invoicesBtn.UseVisualStyleBackColor = true;
+            this.invoicesBtn.Click += new System.EventHandler(this.invoicesBtn_Click);
+            // 
+            // productsBtn
+            // 
+            this.productsBtn.Location = new System.Drawing.Point(275, 386);
+            this.productsBtn.Name = "productsBtn";
+            this.productsBtn.Size = new System.Drawing.Size(75, 38);
+            this.productsBtn.TabIndex = 20;
+            this.productsBtn.Text = "Products";
+            this.productsBtn.UseVisualStyleBackColor = true;
+            this.productsBtn.Click += new System.EventHandler(this.productsBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.productsBtn);
+            this.Controls.Add(this.invoicesBtn);
             this.Controls.Add(this.customerIdCBox);
             this.Controls.Add(this.stateComboBox);
             this.Controls.Add(this.addBtn);
@@ -270,6 +294,8 @@ namespace Demo_MBA_Books
         private System.Windows.Forms.Button addBtn;
         private System.Windows.Forms.ComboBox stateComboBox;
         private System.Windows.Forms.ComboBox customerIdCBox;
+        private System.Windows.Forms.Button invoicesBtn;
+        private System.Windows.Forms.Button productsBtn;
     }
 }
 

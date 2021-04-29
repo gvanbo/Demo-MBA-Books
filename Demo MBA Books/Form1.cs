@@ -131,5 +131,17 @@ namespace Demo_MBA_Books
             currentCustomer = context.Customers.Find(id);
             DisplayCustomer();
         }
+
+        private void invoicesBtn_Click(object sender, EventArgs e)
+        {
+            InvoicesExplicit displayInvoicesExplicit = new InvoicesExplicit();
+            displayInvoicesExplicit.ShowDialog();
+        }
+
+        private void productsBtn_Click(object sender, EventArgs e)
+        {
+            Products displayProducts = new Products();
+            displayProducts.ShowDialog();
+        }
     }
 }
